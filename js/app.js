@@ -24,8 +24,7 @@ buttonCoders.addEventListener('click', selectOption);
 buttonOverview.addEventListener('click', selectOption);
 buttonTeachers.addEventListener('click', selectOption);
 
-
-/*Funciones de la sección coders*/
+/* Funciones de la sección coders*/
 var boton = document.getElementById("btn");/*variable que sirve para llamar al elemento html por su id*/
 
 function showMenu() {
@@ -35,8 +34,7 @@ function showMenu() {
 
      menu.classList.remove("disable-menu");
      menu.classList.add("enabled-menu");
-   }
-   else{
+   }else{
      menu.classList.remove("enabled-menu")
      menu.classList.add("disable-menu")
 
