@@ -6,11 +6,13 @@ var select = function() {
   var eventselection = event.target;
   var option = eventselection.selectedIndex;
 
-  if(option === 1){
+  if (option === 1) {
     var ratings = data['AQP']['2016-2']['ratings'];
-    for(var i = 0; i < ratings.length; i++)
-    console.log(ratings[i]['jedi']);
-  }else if(option === 2){
+    for (var i = 0; i < ratings.length; i++) {
+      console.log(ratings[i]['jedi']);
+      console.log(ratings[i]['teacher']);
+    }
+  } else if (option === 2) {
     console.log("escogieron la opción 2");
   }else if(option === 3){
     console.log("escogieron la opción 3");

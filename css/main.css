@@ -31,6 +31,14 @@ header > div.user > p {
 }
 
 /*ID'S*/
+#cajita {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  margin-left: 300px;
+  margin-top: 1000px;
+}
+
 #main_menu {
   background-color: white;
   border-right: 1px solid #EDEFF6;
@@ -53,15 +61,6 @@ header > div.user > p {
   padding-top: 170px;
   text-align: center;
 }
-
-/*#menu > div {
-  background-color: #FFC107;
-  border: 1px solid #FFC107;
-  border-radius: 10px;
-  height: 40px;
-  margin: 25px auto;
-  width: 120px;
-}*/
 
 #menu > div > button {
   background-color: #FFC107;
@@ -89,7 +88,6 @@ header > div.user > p {
 }
 
 /*CLASES*/
-
 .clear-b {
   clear: both;
 }
