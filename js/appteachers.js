@@ -1,4 +1,3 @@
-console.log(data);
 // Variables reutilizables
 var selectbutton = document.getElementById('buttonselect');
 
