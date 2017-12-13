@@ -1,7 +1,7 @@
 console.log(data);
 
 
-// Variables reutilizables y función para los botones del menú (No mover)
+// Funciones para los botones del menú (No mover)
 var maincontainer = document.getElementById('main_container');
 var buttonCoders = document.getElementById('coders');
 var buttonOverview = document.getElementById('overview');
@@ -11,7 +11,7 @@ var selectOption = function() {
   var option = event.target;
   console.log(option);
   if(option === buttonCoders){
-    window.location="../views/coders.html";
+    window.location="../index.html";
   }else if(option === buttonOverview){
     window.location="../views/sede.html";
   }else if(option === buttonTeachers){

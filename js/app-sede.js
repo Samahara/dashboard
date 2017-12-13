@@ -1,6 +1,6 @@
 //Hacer uso de los datos de la variable desatar
 console.log(data);
-
+/*
 //Variables reutilizables
 var selectbutton = document.getElementById("button_select");
 
@@ -17,21 +17,21 @@ var select = function (event) {
   }
 }
 
-selectbutton.addEventListener("change", select);
-/*Variables reutilizables y función para los botones del menú (no mover)*/
+selectbutton.addEventListener("change", select);*/
+
+// Funciones para los botones del menú (No mover)
 var maincontainer = document.getElementById('main_container');
 var buttonCoders = document.getElementById('coders');
 var buttonOverview = document.getElementById('overview');
 var buttonTeachers = document.getElementById('teachers');
 
-// Funciones para los botones del menú
 var selectOption = function() {
   var option = event.target;
   console.log(option);
   if(option === buttonCoders){
     window.location="../views/coders.html";
   }else if(option === buttonOverview){
-    window.location="../views/sede.html";
+    window.location="../index.html";
   }else if(option === buttonTeachers){
     window.location="../views/teachers.html";
   }

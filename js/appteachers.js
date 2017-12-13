@@ -37,7 +37,7 @@ var selectOption = function() {
   }else if(option === buttonOverview){
     window.location="../views/sede.html";
   }else if(option === buttonTeachers){
-    window.location="../views/teachers.html";
+    window.location="../index.html";
   }
 }
 
