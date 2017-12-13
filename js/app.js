@@ -12,11 +12,11 @@ var selectOption = function() {
   var option = event.target;
   console.log(option);
   if(option === buttonCoders){
-    maincontainer.style.backgroundColor = "pink";
+    window.location="views/coders.html";
   }else if(option === buttonOverview){
-    maincontainer.style.backgroundColor = "green";
+    window.location="views/sede.html";
   }else if(option === buttonTeachers){
-    maincontainer.style.backgroundColor = "blue";
+    window.location="views/teachers.html";
   }
 }
 
