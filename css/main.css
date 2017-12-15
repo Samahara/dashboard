@@ -1,0 +1,26 @@
+/*TAGS*/
+body {
+  margin: 0;
+}
+
+header {
+  background-color: gray;
+  border: 2px dotted black;
+  height: 60px;
+  width: 100%;
+}
+
+header > div.logo {
+  float: left;
+  margin: 6px 3px;
+}
+
+/*ID'S*/
+#main_menu {
+  background-color: gray;
+  border: 2px dotted black;
+  min-height: 577px;
+  width: 20%;
+}
+
+/*CLASES*/
