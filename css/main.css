@@ -37,6 +37,24 @@ header > div.user > p {
   width: 20%;
 }
 
+#menu {
+  margin: 0;
+  padding-top: 170px;
+  text-align: center;
+}
+
+#menu > div {
+  background-color: #FFC107;
+  border: 1px solid #FFC107;
+  height: 40px;
+  margin: 25px auto;
+  width: 120px;
+}
+
+#menu > div > p {
+  margin: 12px auto;
+}
+
 /*CLASES*/
 
 .display-i-b {
