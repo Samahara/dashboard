@@ -4,23 +4,49 @@ body {
 }
 
 header {
-  background-color: gray;
-  border: 2px dotted black;
+  background-color: white;
+  border-bottom: 1px solid #EDEFF6;
   height: 60px;
   width: 100%;
 }
 
 header > div.logo {
-  float: left;
-  margin: 6px 3px;
+  margin: 6px 2px;
+}
+
+header > div.user {
+  margin: 3px 40px 3px 0px;
+}
+
+header > div.user > img {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+header > div.user > p {
+  margin: 0;
+  margin-right: 10px;
 }
 
 /*ID'S*/
 #main_menu {
-  background-color: gray;
-  border: 2px dotted black;
-  min-height: 577px;
+  background-color: white;
+  border-right: 1px solid #EDEFF6;
+  min-height: 580px;
   width: 20%;
 }
 
 /*CLASES*/
+
+.display-i-b {
+  display: inline-block;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
