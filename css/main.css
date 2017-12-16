@@ -46,6 +46,7 @@ header > div.user > p {
 #menu > div {
   background-color: #FFC107;
   border: 1px solid #FFC107;
+  border-radius: 10px;
   height: 40px;
   margin: 25px auto;
   width: 120px;
