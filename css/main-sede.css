@@ -1,0 +1,98 @@
+/*TAGS*/
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 0;
+}
+header {
+  background-color: white;
+  border-bottom: 1px solid #EDEFF6;
+  height: 60px;
+  margin: 0px 15px;
+  width:100%;
+  outline: 1px solid purple;
+}
+header>p{
+  margin-right: 20px;
+}
+header>.logo {
+  margin-top: 10px;
+  width:18%;
+}
+
+nav>button {
+  background-color: #FFC107;
+  border-radius: 10px;
+  height: 40px;
+  margin: 40px 20px;
+  text-align: center;
+  width: 120px;
+}
+
+
+/* IDS   */
+#main_menu {
+  background-color: white;
+  border-right: 1px solid #EDEFF6;
+  display: inline-block;
+  min-height: 580px;
+  overflow: hidden;
+  width: 20%;
+}
+
+
+
+/* CLASES  */
+.container {
+  /*background-color: pink;*/
+  display: inline-block;
+  float: right;
+  width: 79.5%;
+}
+.container>.filtro {
+  height: 3vh;
+  margin: 0px auto;
+  display: block;
+  width: 30%;
+  }
+
+.float-left {
+  float: left;
+}
+.float-rigth {
+  float: right;
+}
+
+.graphics {
+  width:39.5%;
+  background-color: #EDEFF6;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 30px 20px;
+  outline: 1px solid blue;
+}
+
+.graphics>h3 {
+  margin-bottom: 40px;
+}
+.graphics>span {
+  background-color: #FFC107;
+  border-radius: 15px;
+  padding: 25px;
+
+}
+.graphics2{
+  width:79%;
+  display: inline-block;
+  background-color: #EDEFF6;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 30px 20px 30px 50px;
+  outline: 1px solid blue;
+}
+.clear {
+  clear: both;
+}
+.display-i-b {
+  display: inline-block;
+}
