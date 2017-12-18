@@ -1,3 +1,24 @@
+//Hacer uso de los datos de la variable desatar
+console.log(data);
+//Variables reutilizables
+var selectbutton = document.getElementByTag("select");
+
+//Función de eleccion de opción
+var select = function () {
+  var eventselection = event.target;
+  var option = eventselection.selectedIndex;
+
+  if (option ===1){
+    var ratings = data["AQP"]["2016-2"]["ratings"];
+    for(var i=0; i<ratigs.length; i++)
+    console.log(ratings[i]["jedi"]);
+  } else if (option==2){
+    console.log("escogiendo la opcion 2")
+  }
+}
+
+selectbutton.addEventListener("change", select);
+
 var data = {
   'AQP': {
     '2016-2': {
@@ -545,7 +566,7 @@ var data = {
           'jedi': 3.6
         },
         {
-          'sprint': 2,
+           'sprint': 2,
           'nps': {
             'promoters': 74,
             'passive': 16,
