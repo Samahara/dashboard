@@ -35,9 +35,17 @@ header > div.user > p {
   background-color: white;
   border-right: 1px solid #EDEFF6;
   margin-top: 61px;
-  min-height: 580px;
+  min-height: 600px;
   position: fixed;
   width: 20%;
+}
+
+#main_container {
+  background-color: red;
+  border-top: 61px solid white;
+  min-height: 600px;
+  margin-left: 20%;
+  width: 80%;
 }
 
 #menu {
@@ -46,23 +54,32 @@ header > div.user > p {
   text-align: center;
 }
 
-#menu > div {
+/*#menu > div {
   background-color: #FFC107;
   border: 1px solid #FFC107;
   border-radius: 10px;
   height: 40px;
   margin: 25px auto;
   width: 120px;
+}*/
+
+#menu > div > button {
+  background-color: #FFC107;
+  border: 1px solid #FFC107;
+  border-radius: 10px;
+  height: 40px;
+  margin: 15px auto;
+  width: 120px;
 }
 
-#menu > div > p {
-  margin: 12px auto;
+#menu > div {
+  margin: 5px auto;
 }
 
 #select_sede > select {
   border: 1px solid #EDEFF6;
-  margin-top: 80px;
-  margin-left: 22%;
+  margin-top: 20px;
+  margin-left: 2%;
   padding: 5px;
 }
 
@@ -72,6 +89,10 @@ header > div.user > p {
 }
 
 /*CLASES*/
+
+.clear-b {
+  clear: both;
+}
 
 .display-i-b {
   display: inline-block;

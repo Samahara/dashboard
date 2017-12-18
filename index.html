@@ -15,24 +15,37 @@
         <img class="display-i-b" src="assets/icons/user-logo.ico" alt="photo">
       </div>
     </header>
-<!-- Utilicé section para que sea más fácil ubicarlo y modificarlo, si tienen
-otra idea avísenme -->
+    <!-- Utilicé section para que sea más fácil ubicarlo y modificarlo, si tienen
+    otra idea avísenme -->
     <section id="main_menu">
       <section id="menu">
-        <div class="">
-          <p class="display-i-b">CODERS</p>
+        <div>
+          <button id="coders" class="display-i-b">CODERS</button>
         </div>
-        <div class="">
-          <p class="display-i-b">OVERVIEW</p> <!-- Este es nombre opcional para que lo chequen -->
+        <div>
+          <button id="overview" class="display-i-b">OVERVIEW</button> <!-- Este es nombre opcional para que lo chequen -->
         </div>
-        <div class="">
-          <p class="display-i-b">TEACHERS</p>
+        <div>
+          <button id="teachers" class="display-i-b">TEACHERS</button>
         </div>
+      </section>
+    </section>
+    <!-- Este va a ser el contenedor que cambie lo que visualizamos en la pág -->
+    <section id="main_container" >
+      <section id="select_sede">
+        <select id="buttonselect" class="display-i-b">
+          <option value="">Select sede</option>
+          <option value="">Arequipa</option>
+          <option value="">Ciudad de México</option>
+          <option value="">Lima</option>
+          <option value="">Santiago de Chile</option>
+        </select>
       </section>
     </section>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
     <script src="./js/app.js"></script>
+    <script src="./js/appteachers.js"></script>
   </body>
 </html>
