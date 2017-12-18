@@ -7,6 +7,7 @@ header {
   background-color: white;
   border-bottom: 1px solid #EDEFF6;
   height: 60px;
+  position: fixed;
   width: 100%;
 }
 
@@ -33,7 +34,9 @@ header > div.user > p {
 #main_menu {
   background-color: white;
   border-right: 1px solid #EDEFF6;
+  margin-top: 61px;
   min-height: 580px;
+  position: fixed;
   width: 20%;
 }
 
@@ -54,6 +57,18 @@ header > div.user > p {
 
 #menu > div > p {
   margin: 12px auto;
+}
+
+#select_sede > select {
+  border: 1px solid #EDEFF6;
+  margin-top: 80px;
+  margin-left: 22%;
+  padding: 5px;
+}
+
+#select_sede > select:focus {
+  border: 2px solid #FFC107;
+  outline: none;
 }
 
 /*CLASES*/
