@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
   padding: 0;
 }
-header {
+/*header {
   background-color: white;
   border-bottom: 1px solid #EDEFF6;
   height: 60px;
@@ -28,10 +28,10 @@ nav>button {
   text-align: center;
   width: 120px;
 }
-
+*/
 
 /* IDS   */
-#main_menu {
+/*#main_menu {
   background-color: white;
   border-right: 1px solid #EDEFF6;
   display: inline-block;
@@ -39,12 +39,12 @@ nav>button {
   overflow: hidden;
   width: 20%;
 }
+*/
 
 
-
-/* CLASES  */
+/* CLASES
 .container {
-  /*background-color: pink;*/
+  background-color: pink;
   display: inline-block;
   float: right;
   width: 79.5%;
@@ -96,3 +96,4 @@ nav>button {
 .display-i-b {
   display: inline-block;
 }
+*/
