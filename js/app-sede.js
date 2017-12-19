@@ -1,18 +1,20 @@
 //Hacer uso de los datos de la variable desatar
 /*console.log(data); */
-var selectOption = function(event) {
+
+/*Función para visualizar y ocultar los contenedores de cada generación*/
+var selectOption2 = function(event) {
   var selectedIndex = event.target.selectedIndex;
   var filter =event.target[selectedIndex].dataset.filter;
-  var aqp20162 = document.getElementById('AQP 2017-1');
+  var aqp20162 = document.getElementById("AQP 2017-1");
   var aqp20171 = document.getElementById("AQP 2016-2");
-  var cdm20172= document.getElementById('CDMX 2017-2');
-  var cdm20171= document.getElementById('CDMX 2017-1');
-  var lim20172 = document.getElementById('LIM 2017-2');
+  var cdm20172= document.getElementById("CDMX 2017-2");
+  var cdm20171= document.getElementById("CDMX 2017-1");
+  var lim20172 = document.getElementById("LIM 2017-2");
   var lim20171 = document.getElementById("LIM 2017-1");
-  var lim20162= document.getElementById('LIM 2016-2');
-  var scl20172 = document.getElementById('SCL 2017-2');
+  var lim20162= document.getElementById("LIM 2016-2");
+  var scl20172 = document.getElementById("SCL 2017-2");
   var scl20171 = document.getElementById("SCL 2017-1");
-  var scl20162= document.getElementById('SCL 2016-2');
+  var scl20162= document.getElementById("SCL 2016-2");
 
   if (filter === "AQP 2017-1"){
     console.log("AQP 2017-1");
@@ -156,22 +158,21 @@ var selectOption = function(event) {
     scl20162.style.display="block";
   }
 
-}
+} /*Cierre de la función*/
 
 var cargarPagina = function () {
 
   var filter =event.target[selectedIndex].dataset.filter;
-/*  var tabSeleccionado = event.target.dataset.tabSeleccionado;*/
-  var aqp20162 = document.getElementById('AQP 2017-1');
+  var aqp20162 = document.getElementById("AQP 2017-1");
   var aqp20171 = document.getElementById("AQP 2016-2");
-  var cdm20172= document.getElementById('CDMX 2017-2');
-  var cdm20171= document.getElementById('CDMX 2017-1');
-  var lim20172 = document.getElementById('LIM 2017-2');
+  var cdm20172= document.getElementById("CDMX 2017-2");
+  var cdm20171= document.getElementById("CDMX 2017-1");
+  var lim20172 = document.getElementById("LIM 2017-2");
   var lim20171 = document.getElementById("LIM 2017-1");
-  var lim20162= document.getElementById('LIM 2016-2');
-  var scl20172 = document.getElementById('SCL 2017-2');
+  var lim20162= document.getElementById("LIM 2016-2");
+  var scl20172 = document.getElementById("SCL 2017-2");
   var scl20171 = document.getElementById("SCL 2017-1");
-  var scl20162= document.getElementById('SCL 2016-2');
+  var scl20162= document.getElementById("SCL 2016-2");
   aqp20171.stye.display="none";
   aqp20162.style.display="none";
   cdm20171.stye.display="none";
@@ -183,8 +184,8 @@ var cargarPagina = function () {
   scl20162.style.display="none";
   scl20172.style.display="none";
 
-  var filters= document.getElementsByClassName('option');
-filters.addEventListener("change", selectOption);
+  var filters= document.getElementsByClassName("option");
+filters.addEventListener("change", selectOption2);
 
 }
 
@@ -193,10 +194,10 @@ cargarPagina ();
 
 
 // Funciones para los botones del menú (No mover)
-var maincontainer = document.getElementById('main_container');
-var buttonCoders = document.getElementById('coders');
-var buttonOverview = document.getElementById('overview');
-var buttonTeachers = document.getElementById('teachers');
+var maincontainer = document.getElementById("main_container");
+var buttonCoders = document.getElementById("coders");
+var buttonOverview = document.getElementById("overview");
+var buttonTeachers = document.getElementById("teachers");
 
 var selectOption = function() {
   var option = event.target;
@@ -210,6 +211,6 @@ var selectOption = function() {
   }
 }
 
-buttonCoders.addEventListener('click', selectOption);
-buttonOverview.addEventListener('click', selectOption);
-buttonTeachers.addEventListener('click', selectOption);
+buttonCoders.addEventListener("click", selectOption);
+buttonOverview.addEventListener("click", selectOption);
+buttonTeachers.addEventListener("click", selectOption);
