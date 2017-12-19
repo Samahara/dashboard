@@ -1,80 +1,26 @@
 // Variables reutilizables
-var selectbutton = document.getElementById('buttonselect');
 var containerTeachers = document.getElementById('container_teachers');
+var selectbutton = document.getElementById('buttonselect');
 
 // Funcion de selección de opción
 var select = function() {
-  var eventselection = event.target;
-  var option = eventselection.selectedIndex;
+  var eventSelection = event.target.selectedIndex;
+  var sede = event.target.value;
+  var year = event.target[eventSelection].dataset.generation;
+  datInfo(sede,year)
+}
 
-  if (option === 1) {
-    var aqp20162 = data['AQP']['2016-2']['ratings'];
-    var aqp20171 = data['AQP']['2017-1']['ratings'];
-    for (var i = 0; i < aqp20162.length; i++) {
-      console.log(aqp20162[i]['sprint']);
-      console.log(aqp20162[i]['jedi']);
-      console.log(aqp20162[i]['teacher']);
-    }
-    for (var i = 0; i < aqp20171.length; i++) {
-      console.log(aqp20171[i]['sprint']);
-      console.log(aqp20171[i]['jedi']);
-      console.log(aqp20171[i]['teacher']);
-    }
-  } else if (option === 2) {
-    var cdmx20171 = data['CDMX']['2017-1']['ratings'];
-    var cdmx20172 = data['CDMX']['2017-2']['ratings'];
-    for (var i = 0; i < cdmx20171.length; i++) {
-      console.log(cdmx20171[i]['sprint']);
-      console.log(cdmx20171[i]['jedi']);
-      console.log(cdmx20171[i]['teacher']);
-    }
-    for (var i = 0; i < cdmx20172.length; i++) {
-      console.log(cdmx20172[i]['sprint']);
-      console.log(cdmx20172[i]['jedi']);
-      console.log(cdmx20172[i]['teacher']);
-    }
-  } else if (option === 3) {
-    var lim20162 = data['AQP']['2016-2']['ratings'];
-    var lim20171 = data['AQP']['2017-1']['ratings'];
-    var lim20172 = data['AQP']['2017-1']['ratings'];
-    for (var i = 0; i < lim20162.length; i++) {
-      console.log(lim20162[i]['sprint']);
-      console.log(lim20162[i]['jedi']);
-      console.log(lim20162[i]['teacher']);
-    }
-    for (var i = 0; i < lim20171.length; i++) {
-      console.log(lim20171[i]['sprint']);
-      console.log(lim20171[i]['jedi']);
-      console.log(lim20171[i]['teacher']);
-    }
-    for (var i = 0; i < lim20172.length; i++) {
-      console.log(lim20172[i]['sprint']);
-      console.log(lim20172[i]['jedi']);
-      console.log(lim20172[i]['teacher']);
-    }
-  } else if (option === 4) {
-    var scl20162 = data['AQP']['2016-2']['ratings'];
-    var scl20171 = data['AQP']['2017-1']['ratings'];
-    var scl20172 = data['AQP']['2017-1']['ratings'];
-    for (var i = 0; i < scl20162.length; i++) {
-      console.log(scl20162[i]['sprint']);
-      console.log(scl20162[i]['jedi']);
-      console.log(scl20162[i]['teacher']);
-    }
-    for (var i = 0; i < scl20171.length; i++) {
-      console.log(scl20171[i]['sprint']);
-      console.log(scl20171[i]['jedi']);
-      console.log(scl20171[i]['teacher']);
-    }
-    for (var i = 0; i < scl20172.length; i++) {
-      console.log(scl20172[i]['sprint']);
-      console.log(scl20172[i]['jedi']);
-      console.log(scl20172[i]['teacher']);
-    }
-  } else {
-    //containerTeachers.innerHTML("");
+var datInfo = function(sede,year) {
+  var main = data[sede][year]['ratings'];
+  for (var i = 0; i < main.length; i++) {
+    var teachers = main[i].teacher;
+    var jedi = main[i].jedi;
+
+    console.log(teachers);
+    console.log(jedi);
   }
 }
+
 
 // Funciones para los botones del menú (No mover)
 var maincontainer = document.getElementById('main_container');
