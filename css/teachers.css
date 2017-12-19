@@ -9,9 +9,9 @@
   background-color: white;
   height: 300px;
   display: inline-block;
-  margin: 30px 20px 30px 80px;
+  margin: 30px 20px 30px 40px;
   text-align: center;
-  width: 900px;
+  width: 90%;
 }
 
 #container_teachers > div > p {
