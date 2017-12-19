@@ -12,7 +12,7 @@
     <!--Barra superior del usuario y logos-->
     <header>
       <div class="logo float-left">
-        <img src="../assets/images/logo.png" alt="Logo">
+        <img src="../assets/images/Logo.png" alt="Logo">
       </div>
       <div class="user float-right">
         <p class="display-i-b">User name</p>
@@ -38,7 +38,7 @@
       <!-- Aquí debe de ir tu código -->
       <!-- Filtro para desatar evento que mostrara la información por sedes-->
       <section class="container " >
-        <select class="filtro"  >
+        <select class="filtro" id="button_select"  >
           <option >Selecciona una sede </option>
           <option value = "SEDE" data-sede="AQP" data-generacion ="2016-2">Aqueripa, generación 2017-1</option>
           <option value = "SEDE" data-sede="AQP" data-generacion ="2017-1">Aqueripa, generación 2016-2</option>
@@ -56,9 +56,6 @@
           <h3>ENROLLMENT</h3>
           <span>number</span>
           <span>PORCENT</span>
-
-
-
         <!--Agregando el div que creo tendra la gráfica aquievement-->
         </section>
         <section class="graphics" id="aquievement">
@@ -95,12 +92,11 @@
       </section>
     </section>
 
-
-    <!--Unióm con javascript para unir las funciones-->
-    <script type="text/javascript" src="../js/app-sede.js"></script>
+    <!-- Base de datos -->
+    <script src="../js/data.js"></script>
+    <!-- Aquí va tus archivos JS -->
     <script src="../js/app.js"></script>
-    <!--Unión con javascript para unir la data-->
-    <script type="text/javascript" src="../js/data.js"></script>
+    <script type="text/javascript" src="../js/app-sede.js"></script>
 
   </body>
 </html>

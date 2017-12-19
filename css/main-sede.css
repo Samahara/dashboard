@@ -42,7 +42,7 @@ nav>button {
 */
 
 
-/* CLASES
+ CLASES
 .container {
   background-color: pink;
   display: inline-block;
@@ -56,16 +56,10 @@ nav>button {
   width: 30%;
   }
 
-.float-left {
-  float: left;
-}
-.float-rigth {
-  float: right;
-}
 
 .graphics {
   width:39.5%;
-  background-color: #EDEFF6;
+  background-color: #EFEFEF;
   border-radius: 15px;
   display: inline-block;
   margin: 30px 20px;
@@ -79,16 +73,23 @@ nav>button {
   background-color: #FFC107;
   border-radius: 15px;
   padding: 25px;
-
 }
 .graphics2{
   width:79%;
   display: inline-block;
-  background-color: #EDEFF6;
+  background-color: #EFEFEF;
   border-radius: 15px;
   padding: 25px;
   margin: 30px 20px 30px 50px;
   outline: 1px solid blue;
+}
+.graphics2>h3 {
+  margin-bottom: 40px;
+}
+.graphics2>span {
+  background-color: #FFC107;
+  border-radius: 15px;
+  padding: 25px;
 }
 .clear {
   clear: both;
@@ -96,4 +97,3 @@ nav>button {
 .display-i-b {
   display: inline-block;
 }
-*/

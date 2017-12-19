@@ -1,35 +1,12 @@
 //Hacer uso de los datos de la variable desatar
 console.log(data);
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
 
-// Draw the chart and set the chart values
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Task', 'Hours per Day'],
-  ['Work', 8],
-  ['Friends', 2],
-  ['Eat', 2],
-  ['TV', 3],
-  ['Gym', 2],
-  ['Sleep', 7]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'My Average Day', 'width':400, 'height':300};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
-
-/*//Variables reutilizables
-var selectbutton = document.getElementByTag("option");
+//Variables reutilizables
+var selectbutton = document.getElementById("button_select");
 
 //Función de eleccion de opción
-var select = function () {
-  var eventselection = event.target;
-  var option = eventselection.selectedIndex;
+var select = function (event) {
+
 
   if (option ===1){
     var ratings = data["AQP"]["2016-2"]["ratings"];
@@ -41,4 +18,25 @@ var select = function () {
 }
 
 selectbutton.addEventListener("change", select);
-*/
+/*Variables reutilizables y función para los botones del menú (no mover)*/
+var maincontainer = document.getElementById('main_container');
+var buttonCoders = document.getElementById('coders');
+var buttonOverview = document.getElementById('overview');
+var buttonTeachers = document.getElementById('teachers');
+
+// Funciones para los botones del menú
+var selectOption = function() {
+  var option = event.target;
+  console.log(option);
+  if(option === buttonCoders){
+    window.location="../views/coders.html";
+  }else if(option === buttonOverview){
+    window.location="../views/sede.html";
+  }else if(option === buttonTeachers){
+    window.location="../views/teachers.html";
+  }
+}
+
+buttonCoders.addEventListener('click', selectOption);
+buttonOverview.addEventListener('click', selectOption);
+buttonTeachers.addEventListener('click', selectOption);
