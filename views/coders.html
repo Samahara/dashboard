@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="logo float-left">
-        <img src="../assets/images/logo.png" alt="Logo">
+        <img src="../assets/images/Logo.png" alt="Logo">
       </div>
       <div class="user float-right">
         <p class="display-i-b">User name</p>
@@ -33,7 +33,7 @@ otra idea avísenme -->
      </section>
     <section id="main_container" >
       <!--aquí debe de estar tu código -->
-      <div class="contenedor">
+    <!--  <div class="contenedor">
         <button id="btn">
           <p>FILTERS</p>
         </button>
@@ -54,7 +54,28 @@ otra idea avísenme -->
            <li><a href="#">2017</a></li>
         </ul>
        </nav>
-      </div>
+     </div> -->
+
+     <select id="filtro" onchange ="seleccionarOpcion(event)">
+          <option >Selecciona una sede </option>
+          <option value = "cdmx5" data-sede="CDMX" data-generacion ="quinta">Ciudad de México.Quinta generación</option>
+          <option value = "cdmx4" data-sede="CDMX" data-generacion ="cuarta">Ciudad de México. Cuarta generación</option>
+          <option value = "cdmx3" data-sede="CDMX" data-generacion ="tercera">Ciudad de México. Tercera generación</option>
+          <option value = "lim1" data-sede="Lima" data-generacion ="primera">Lima, Primera Generacion</option>
+          <option value = "lim2" data-sede="Lima" data-generacion ="segunda">Lima, Segunda Generación</option>
+
+      </select>
+      <section id="contenedor">
+          <div class="coder ejemplo">
+              <img src="http://dummyimage.com/162x148.png/ff4444/ffffff" class="foto-coder">
+              <div class="">
+                <p class="nombre">Lila Salas</p></div>
+                <p class="turno">AM</p>
+              <span class="correo">lila.salas@gmail.com</span>
+              <span class="generacion">2017-1</span>
+              </div>
+          </div>
+      </section>
     </section>
 
     <!-- Base de datos -->
