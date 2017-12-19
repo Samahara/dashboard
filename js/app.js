@@ -11,11 +11,11 @@ var buttonTeachers = document.getElementById('teachers');
 var selectOption = function() {
   var option = event.target;
   console.log(option);
-  if(option === buttonCoders){
+  if (option === buttonCoders) {
     window.location="views/coders.html";
-  }else if(option === buttonOverview){
+  } else if (option === buttonOverview) {
     window.location="views/sede.html";
-  }else if(option === buttonTeachers){
+  } else if (option === buttonTeachers) {
     window.location="views/teachers.html";
   }
 }
