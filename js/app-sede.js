@@ -1,8 +1,29 @@
 //Hacer uso de los datos de la variable desatar
 /*console.log(data); */
+// Funciones para los botones del menú (No mover)
+var maincontainer = document.getElementById("main_container");
+var buttonCoders = document.getElementById("coders");
+var buttonOverview = document.getElementById("overview");
+var buttonTeachers = document.getElementById("teachers");
+
+var selectOption = function() {
+  var option = event.target;
+  console.log(option);
+  if(option === buttonCoders){
+    window.location="../views/coders.html";
+  }else if(option === buttonOverview){
+    window.location="../index.html";
+  }else if(option === buttonTeachers){
+    window.location="../views/teachers.html";
+  }
+}
+
+buttonCoders.addEventListener("click", selectOption);
+buttonOverview.addEventListener("click", selectOption);
+buttonTeachers.addEventListener("click", selectOption);
 
 /*Función para visualizar y ocultar los contenedores de cada generación*/
-var selectOption2 = function(event) {
+var selectSede = function(event) {
   var selectedIndex = event.target.selectedIndex;
   var filter =event.target[selectedIndex].dataset.filter;
   var aqp20162 = document.getElementById("AQP 2017-1");
@@ -190,27 +211,3 @@ filters.addEventListener("change", selectOption2);
 }
 
 cargarPagina ();
-
-
-
-// Funciones para los botones del menú (No mover)
-var maincontainer = document.getElementById("main_container");
-var buttonCoders = document.getElementById("coders");
-var buttonOverview = document.getElementById("overview");
-var buttonTeachers = document.getElementById("teachers");
-
-var selectOption = function() {
-  var option = event.target;
-  console.log(option);
-  if(option === buttonCoders){
-    window.location="../views/coders.html";
-  }else if(option === buttonOverview){
-    window.location="../index.html";
-  }else if(option === buttonTeachers){
-    window.location="../views/teachers.html";
-  }
-}
-
-buttonCoders.addEventListener("click", selectOption);
-buttonOverview.addEventListener("click", selectOption);
-buttonTeachers.addEventListener("click", selectOption);
