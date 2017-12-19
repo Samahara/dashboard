@@ -1,0 +1,22 @@
+#container_teachers {
+  background-color: black;
+  min-height: 600px;
+  margin: 10px;
+  width: 98%;
+}
+
+#container_teachers > div {
+  background-color: white;
+  height: 300px;
+  display: inline-block;
+  margin: 30px 20px 30px 80px;
+  text-align: center;
+  width: 900px;
+}
+
+#container_teachers > div > p {
+  border: 1px solid black;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+}
