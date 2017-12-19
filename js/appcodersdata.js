@@ -62,3 +62,4 @@ var pintarCoders = function(nombre,turno,mail){
     divCoder.appendChild(parrafoCorreo);
 
     contenedorCoders.appendChild(divCoder);
+}
