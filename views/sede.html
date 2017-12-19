@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Sedes</title>
-
     <!--Este es el link del css-->
     <link rel="stylesheet" href="../css/main-sede.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -19,8 +18,7 @@
         <img class="display-i-b" src="../assets/icons/user-logo.ico" alt="photo">
       </div>
     </header>
-    <!-- Utilicé section para que sea más fácil ubicarlo y modificarlo, si tienen
-    otra idea avísenme -->
+    <!-- Utilicé section Para el menú para que sea fácil ubicarlo -->
     <section id="main_menu">
       <section id="menu">
         <div>
@@ -34,64 +32,408 @@
         </div>
       </section>
     </section>
-    <section id="main_container" >
-      <!-- Aquí debe de ir tu código -->
+    <!-- Un section que contenga toda la información relevante-->
+    <section id="main_container" class="container" >
       <!-- Filtro para desatar evento que mostrara la información por sedes-->
-      <section class="container " >
         <select class="filtro" id="button_select"  >
           <option >Selecciona una sede </option>
-          <option value = "SEDE" data-sede="AQP" data-generacion ="2016-2">Aqueripa, generación 2017-1</option>
-          <option value = "SEDE" data-sede="AQP" data-generacion ="2017-1">Aqueripa, generación 2016-2</option>
-          <option value = "SEDE" data-sede="CDMX" data-generacion ="2017-2">Ciudad de México, generación 2017-2</option>
-          <option value = "SEDE" data-sede="CDMX" data-generacion ="2017-1">Ciudad de México, generación 2017-1</option>
-          <option value = "SEDE" data-sede="LIM" data-generacion ="2017-2">Lima, generación 2017-2</option>
-          <option value = "SEDE" data-sede="LIM" data-generacion ="2017-1">Lima, generación 2017-1</option>
-          <option value = "SEDE" data-sede="LIM" data-generacion ="2016-2">Lima, generación 2017-1</option>
-          <option value = "SCL" data-sede="SCL" data-generacion ="2017-1">Santiago de Chile, generación 2017-2</option>
-          <option value = "SCL" data-sede="SCL" data-generacion ="2017-1">Santiago de Chile, generación 2017-1</option>
-          <option value = "SCL" data-sede="SCL" data-generacion ="2016-2">Santiago de Chile, generación 2016-2</option>
+          <option value = "SEDE" data-filter="AQP 2017-1" class="option"> Aqueripa, generación 2017-1</option>
+          <option value = "SEDE" data-filter="AQP 2016-2"class="option">Aqueripa, generación 2016-2</option>
+          <option value = "SEDE" data-filter="CDMX 2017-2" class="option">Ciudad de México, generación 2017-2</option>
+          <option value = "SEDE" data-filter="CDMX 2017-1" class="option">Ciudad de México, generación 2017-1</option>
+          <option value = "SEDE" data-filter="LIM 2017-2" class="option">Lima, generación 2017-2</option>
+          <option value = "SEDE" data-filter="LIM 2017-1" class="option">Lima, generación 2017-1</option>
+          <option value = "SEDE" data-filter="LIM 2016-2" class="option">Lima, generación 2016-2</option>
+          <option value = "SCL" data-filter="SCL 2017-2" class="option">Santiago de Chile, generación 2017-2</option>
+          <option value = "SCL" data-filter="SCL 2017-1" class="option">Santiago de Chile, generación 2017-1</option>
+          <option value = "SCL" data-filter="SCL 2016-2"class="option">Santiago de Chile, generación 2016-2</option>
         </select>
-        <!--Agregando el div que creo tendra la gráfica enrollment-->
-        <section class="graphics " id="enrollment">
+        <!--Agrego un section con id AQP 2017-1 que es mi contenedor de información de esa sede y generación-->
+        <section  id="AQP 2017-1" >
+          <!--Agregando el div que creo tendra la gráfica enrollment -->
+          <section class="graphics enrollment" >
+            <h3>ENROLLMENT</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          <!--Agregando el div que creo tendra la gráfica aquievement-->
+          </section>
+          <section class="graphics aquievement" >
+            <h3>AQUIEVEMENT</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          <!--Agregando el div que creo tendra la gráfica net promoter -->
+          </section>
+          <section class="graphics net-promoter" >
+            <h3>NET PROMOTER SCORE</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+          <section class="graphics student-satisfaction" >
+            <h3>STUDENT SATISFACTION</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!--Agregando el div que creo tendra la gráfica tech skills  -->
+          <section class="graphics2 tech-skills" >
+            <h3>TECH SKillS</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!-- Agregando el div que tendra la gráfica de life skills -->
+          <section class="graphics2 life-skills" >
+            <h3>LIFE SKillS</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+        </section> <!--Cierre de Aqueripa generacion 2017-1-->
+        <!-- Agregar contenedor de generación Aqueripa 2016-2-->
+        <section  id="AQP 2016-2" >
+          <!--Agregando el div que creo tendra la gráfica enrollment -->
+          <section class="graphics enrollment" >
+            <h3>ENROLLMENT</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          <!--Agregando el div que creo tendra la gráfica aquievement-->
+          </section>
+          <section class="graphics aquievement" >
+            <h3>AQUIEVEMENT</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          <!--Agregando el div que creo tendra la gráfica net promoter -->
+          </section>
+          <section class="graphics net-promoter" >
+            <h3>NET PROMOTER SCORE</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+          <section class="graphics student-satisfaction" >
+            <h3>STUDENT SATISFACTION</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!--Agregando el div que creo tendra la gráfica tech skills  -->
+            <section class="graphics2 tech-skills" >
+              <h3>TECH SKillS</h3>
+              <span>number</span>
+              <span>PORCENT</span>
+            </section>
+          <!-- Agregando el div que tendra la gráfica de life skills -->
+            <section class="graphics2 life-skills" >
+              <h3>LIFE SKillS</h3>
+              <span>number</span>
+              <span>PORCENT</span>
+            </section>
+          </section> <!--Cierre de Aqueripa generacion 2016-2-->
+          <!--Agrego un section con id CDMX 2017-2  que es mi contenedor de información de esa sede y generación-->
+          <section  id="CDMX 2017-2" >
+          <!--Agregando el div que creo tendra la gráfica enrollment -->
+            <section class="graphics enrollment" >
+              <h3>ENROLLMENT</h3>
+              <span>number</span>
+              <span>PORCENT</span>
+          <!--Agregando el div que creo tendra la gráfica aquievement-->
+            </section>
+            <section class="graphics aquievement" >
+              <h3>AQUIEVEMENT</h3>
+              <span>number</span>
+              <span>PORCENT</span>
+          <!--Agregando el div que creo tendra la gráfica net promoter -->
+            </section>
+            <section class="graphics net-promoter" >
+              <h3>NET PROMOTER SCORE</h3>
+              <span>number</span>
+              <span>PORCENT</span>
+            </section>
+          <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+          <section class="graphics student-satisfaction" >
+            <h3>STUDENT SATISFACTION</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!--Agregando el div que creo tendra la gráfica tech skills  -->
+          <section class="graphics2 tech-skills" >
+            <h3>TECH SKillS</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!-- Agregando el div que tendra la gráfica de life skills -->
+          <section class="graphics2 life-skills" >
+            <h3>LIFE SKillS</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+        </section> <!--Cierre de CDMX generacion 2017-2-->
+          <!--Agrego un section con id CDM 2017-1 que es mi contenedor de información de esa sede y generación-->
+        <section  id="CDMX 2017-1" >
+          <!--Agregando el div que creo tendra la gráfica enrollment -->
+          <section class="graphics enrollment" >
+            <h3>ENROLLMENT</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          <!--Agregando el div que creo tendra la gráfica aquievement-->
+          </section>
+            <section class="graphics aquievement" >
+            <h3>AQUIEVEMENT</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          <!--Agregando el div que creo tendra la gráfica net promoter -->
+          </section>
+          <section class="graphics net-promoter" >
+            <h3>NET PROMOTER SCORE</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+          <section class="graphics student-satisfaction" >
+            <h3>STUDENT SATISFACTION</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+          <!--Agregando el div que creo tendra la gráfica tech skills  -->
+          <section class="graphics2 tech-skills" >
+            <h3>TECH SKillS</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+            </section>
+          <!-- Agregando el div que tendra la gráfica de life skills -->
+          <section class="graphics2 life-skills" >
+            <h3>LIFE SKillS</h3>
+            <span>number</span>
+            <span>PORCENT</span>
+          </section>
+        </section> <!--Cierre de CDMX generacion 2017-1-->
+        <!--Agrego un section con id LIM 2017-2' que es mi contenedor de información de esa sede y generación-->
+        <section  id="LIM 2017-2" >
+           <!--Agregando el div que creo tendra la gráfica enrollment -->
+           <section class="graphics enrollment" >
+             <h3>ENROLLMENT</h3>
+             <span>number</span>
+             <span>PORCENT</span>
+           <!--Agregando el div que creo tendra la gráfica aquievement-->
+           </section>
+        <section class="graphics aquievement" >
+             <h3>AQUIEVEMENT</h3>
+             <span>number</span>
+             <span>PORCENT</span>
+           <!--Agregando el div que creo tendra la gráfica net promoter -->
+        </section>
+        <section class="graphics net-promoter" >
+          <h3>NET PROMOTER SCORE</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+          <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+        <section class="graphics student-satisfaction" >
+          <h3>STUDENT SATISFACTION</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+          </section>
+          <!--Agregando el div que creo tendra la gráfica tech skills  -->
+        <section class="graphics2 tech-skills" >
+          <h3>TECH SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+          <!-- Agregando el div que tendra la gráfica de life skills -->
+        <section class="graphics2 life-skills" >
+          <h3>LIFE SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+          </section> <!--Cierre de Aqueripa generacion LIM 2017-1-->
+      <section  id="LIM 2017-1" >
+        <!--Agregando el div que creo tendra la gráfica enrollment -->
+        <section class="graphics enrollment" >
           <h3>ENROLLMENT</h3>
           <span>number</span>
           <span>PORCENT</span>
         <!--Agregando el div que creo tendra la gráfica aquievement-->
         </section>
-        <section class="graphics" id="aquievement">
+        <section class="graphics aquievement" >
           <h3>AQUIEVEMENT</h3>
           <span>number</span>
           <span>PORCENT</span>
-
         <!--Agregando el div que creo tendra la gráfica net promoter -->
         </section>
-        <section class="graphics" id="net_promoter">
+        <section class="graphics net-promoter" >
           <h3>NET PROMOTER SCORE</h3>
           <span>number</span>
           <span>PORCENT</span>
         </section>
         <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
-        <section class="graphics" id="student_satisfaction">
-            <h3>STUDENT SATISFACTION</h3>
-            <span>number</span>
-            <span>PORCENT</span>
+        <section class="graphics student-satisfaction" >
+          <h3>STUDENT SATISFACTION</h3>
+          <span>number</span>
+          <span>PORCENT</span>
         </section>
         <!--Agregando el div que creo tendra la gráfica tech skills  -->
-        <section class="graphics2" id="tech_skills">
+        <section class="graphics2 tech-skills" >
           <h3>TECH SKillS</h3>
           <span>number</span>
           <span>PORCENT</span>
         </section>
-        <!--  -->
-        <section class="graphics2" id="life_skills">
+        <!-- Agregando el div que tendra la gráfica de life skills -->
+        <section class="graphics2 life-skills" >
           <h3>LIFE SKillS</h3>
           <span>number</span>
           <span>PORCENT</span>
         </section>
-
-      </section>
-    </section>
-
+      </section> <!--Cierre de la generacion LIM 2017-2-->
+      <section  id="LIM 2016-2" >
+      <!--Agregando el div que creo tendra la gráfica enrollment -->
+        <section class="graphics enrollment" >
+          <h3>ENROLLMENT</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        <!--Agregando el div que creo tendra la gráfica aquievement-->
+        </section>
+        <section class="graphics aquievement" >
+          <h3>AQUIEVEMENT</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        <!--Agregando el div que creo tendra la gráfica net promoter -->
+        </section>
+        <section class="graphics net-promoter" >
+          <h3>NET PROMOTER SCORE</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+        <section class="graphics student-satisfaction" >
+          <h3>STUDENT SATISFACTION</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!--Agregando el div que creo tendra la gráfica tech skills  -->
+        <section class="graphics2 tech-skills" >
+          <h3>TECH SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!-- Agregando el div que tendra la gráfica de life skills -->
+        <section class="graphics2 life-skills" >
+          <h3>LIFE SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+      </section> <!--Cierre de la generacion LIM 2016-2-->
+      <section  id="SCL 2017-2" >
+      <!--Agregando el div que creo tendra la gráfica enrollment -->
+         <section class="graphics enrollment" >
+           <h3>ENROLLMENT</h3>
+           <span>number</span>
+           <span>PORCENT</span>
+      <!--Agregando el div que creo tendra la gráfica aquievement-->
+         </section>
+        <section class="graphics aquievement" >
+          <h3>AQUIEVEMENT</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        <!--Agregando el div que creo tendra la gráfica net promoter -->
+        </section>
+        <section class="graphics net-promoter" >
+          <h3>NET PROMOTER SCORE</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+        <section class="graphics student-satisfaction" >
+          <h3>STUDENT SATISFACTION</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!--Agregando el div que creo tendra la gráfica tech skills  -->
+        <section class="graphics2 tech-skills" >
+          <h3>TECH SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!-- Agregando el div que tendra la gráfica de life skills -->
+        <section class="graphics2 life-skills" >
+          <h3>LIFE SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+      </section> <!--Cierre de la generacion SCL 2017-2-->
+      <section  id="SCL 2017-1" >
+      <!--Agregando el div que creo tendra la gráfica enrollment -->
+        <section class="graphics enrollment" >
+          <h3>ENROLLMENT</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+      <!--Agregando el div que creo tendra la gráfica aquievement-->
+        </section>
+        <section class="graphics aquievement" >
+          <h3>AQUIEVEMENT</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+      <!--Agregando el div que creo tendra la gráfica net promoter -->
+        </section>
+        <section class="graphics net-promoter" >
+  <h3>NET PROMOTER SCORE</h3>
+  <span>number</span>
+  <span>PORCENT</span>
+</section>
+        <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+        <section class="graphics student-satisfaction" >
+          <h3>STUDENT SATISFACTION</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!--Agregando el div que creo tendra la gráfica tech skills  -->
+        <section class="graphics2 tech-skills" >
+          <h3>TECH SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!-- Agregando el div que tendra la gráfica de life skills -->
+        <section class="graphics2 life-skills" >
+          <h3>LIFE SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        </section> <!--Cierre de Aqueripa generacion SCL 2017-1-->
+      <section  id="SCL 2016-2" >
+        <!--Agregando el div que creo tendra la gráfica enrollment -->
+        <section class="graphics enrollment" >
+          <h3>ENROLLMENT</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        <!--Agregando el div que creo tendra la gráfica aquievement-->
+        </section>
+        <section class="graphics aquievement" >
+           <h3>AQUIEVEMENT</h3>
+           <span>number</span>
+           <span>PORCENT</span>
+        <!--Agregando el div que creo tendra la gráfica net promoter -->
+        </section>
+        <section class="graphics net-promoter" >
+  <h3>NET PROMOTER SCORE</h3>
+  <span>number</span>
+  <span>PORCENT</span>
+</section>
+        <!-- Agregando el div que creo tendra la gráfica students stisfaction -->
+        <section class="graphics student-satisfaction" >
+          <h3>STUDENT SATISFACTION</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!--Agregando el div que creo tendra la gráfica tech skills  -->
+        <section class="graphics2 tech-skills" >
+          <h3>TECH SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+        <!-- Agregando el div que tendra la gráfica de life skills -->
+        <section class="graphics2 life-skills" >
+          <h3>LIFE SKillS</h3>
+          <span>number</span>
+          <span>PORCENT</span>
+        </section>
+          </section> <!--Cierre de Aqueripa generacion SCL 2016-2-->
+          </section> <!--Es el cierre del container, no tocar-->
     <!-- Base de datos -->
     <script src="../js/data.js"></script>
     <!-- Aquí va tus archivos JS -->
