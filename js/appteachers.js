@@ -13,11 +13,14 @@ var select = function() {
 var datInfo = function(sede,year) {
   var main = data[sede][year]['ratings'];
   for (var i = 0; i < main.length; i++) {
-    var teachers = main[i].teacher;
-    var jedi = main[i].jedi;
+    var teachers = main[i]['teacher'];
+    var jedi = main[i]['jedi'];
 
-    console.log(teachers);
-    console.log(jedi);
+    var objTeachers = {};
+    objTeachers = teachers;
+
+    console.log(objTeachers);
+
   }
 }
 
