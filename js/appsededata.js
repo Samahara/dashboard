@@ -17,12 +17,9 @@ var information = function(sede, generation) {
       var promoter = otherName[i]["nps"]["promoters"];
       var passive =otherName[i]["nps"]["passive"];
       var detractors =otherName[i]["nps"]["detractors"];
-      console.log(promoter);
-      console.log(passive);
-      console.log(detractors);
       }
   }
 
- 
+
 
 filters.addEventListener("change", selectSede);
