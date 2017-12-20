@@ -5,9 +5,10 @@
 }
 
 #contenedor > div {
+  outline: 3px solid #FFC107;
   background-color: white;
   display: inline-block;
-  height: 200px;
+  height: 250px;
   margin: 20px;
   width: 300px;
 }
@@ -19,7 +20,23 @@
 
 #contenedor > div > div > p {
   font-weight: bold;
+  background-color: #FFC107;
+  display: inline-block;
+  width: 250px;
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+  padding-top: 10px;
 }
+
+/*#contenedor > div > div {
+  outline: 3px solid #FFC107;
+}*/
+
+#contenedor > div > div > .cuadritos {
+  outline: 3px solid #FFC107;
+}
+
 
 #filter {
   border: 1px solid #EDEFF6;

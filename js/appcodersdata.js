@@ -38,27 +38,37 @@ var obtenerDatos = function(sede,generacion){//esta función recorre la data par
     for(var i = 0; i < estudiantes.length; i++){
         var nombre = estudiantes[i].name;
         var photo = estudiantes[i].photo;
-        var sprint = estudiantes[i].sprints;
+        var stuActive = estudiantes[i].active;
 
-        generarCoders(nombre, photo, sprint)
+        generarCoders(nombre, photo, stuActive)
     }
 }
-var generarCoders = function(nombre, photo, sprint){//Esta funcion crea elementos en el contenedor de coders. Es padre de estos elementos.
+var generarCoders = function(nombre, photo, stuActive){//Esta funcion crea elementos en el contenedor de coders. Es padre de estos elementos.
     var contenedorCoders = document.getElementById("contenedor");
     var imagen = document.createElement("img");
     var parrafoNombre = document.createElement("p");
-    var parrafoSprint = document.createElement("p");
+    var parrafoStudentActive = document.createElement("p");
     var divCoder = document.createElement("div");
     var divInfo = document.createElement("div");
+    /*var divInfoDos = document.createElement("div");
+    var divInfoTres = document.createElement("div");*/
 
     imagen.src = photo; //agrega los atributos a los contenedores
     parrafoNombre.innerText = nombre;
-    parrafoSprint.innerText = sprint; //se agrega texto con innerText
+    parrafoStudentActive.innerText = stuActive; //se agrega texto con innerText
+
+    if (stuActive === true) {
+      parrafoStudentActive.innerText = "Activa";
+    } else if (stuActive === false) {
+      parrafoStudentActive.innerText = "No activa"
+    }
 
     divCoder.appendChild(imagen);//Se agregan los hijos al div
     divInfo.appendChild(parrafoNombre);
-    divInfo.appendChild(parrafoSprint);
+    divInfo.appendChild(parrafoStudentActive);
     divCoder.appendChild(divInfo);
+    /*divCoder.appendChild(divInfoDos);
+    divCoder.appendChild(divInfoTres);*/
 
     contenedorCoders.appendChild(divCoder);
 
