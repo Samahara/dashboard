@@ -39,6 +39,27 @@ header > div.user > p {
   margin-top: 1000px;
 }
 
+#home {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#home > button > img {
+  height: 50px;
+  width: 50px;
+}
+
+#home > button {
+  background: none;
+  border: none;
+  margin: 30px;
+  width: 70px;
+}
+
+#home > button:focus {
+  outline: none;
+}
+
 #main_menu {
   background-color: white;
   border-right: 1px solid #EDEFF6;
@@ -58,7 +79,7 @@ header > div.user > p {
 
 #menu {
   margin: 0;
-  padding-top: 170px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -102,4 +123,8 @@ header > div.user > p {
 
 .float-right {
   float: right;
+}
+
+.visibility {
+  visibility: hidden;
 }

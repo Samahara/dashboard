@@ -6,6 +6,7 @@ var maincontainer = document.getElementById('main_container');
 var buttonCoders = document.getElementById('coders');
 var buttonOverview = document.getElementById('overview');
 var buttonTeachers = document.getElementById('teachers');
+var homeButton = document.getElementById('home');
 
 // Funciones para los botones del menú
 var selectOption = function() {
@@ -20,6 +21,11 @@ var selectOption = function() {
   }
 }
 
+var selectHome = function() {
+  window.location="../index.html"
+}
+
 buttonCoders.addEventListener('click', selectOption);
 buttonOverview.addEventListener('click', selectOption);
 buttonTeachers.addEventListener('click', selectOption);
+homeButton.addEventListener('click', selectHome);
