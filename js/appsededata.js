@@ -1,6 +1,6 @@
-//Hacer uso de los datos de la variable desatar
-/*console.log(data); */
-/*Función para visualizar y ocultar los contenedores de cada generación*/
+
+console.log(data);
+/*Función que detona el evento al escojer sede */
 
 var filters = document.getElementById("button_select");
 
@@ -10,19 +10,18 @@ var selectSede = function(event) {
   var generation = event.target[selectedIndex].dataset.generation;
   information(sede, generation);
 }
-
+/*Función que recorre la información de data hasta obtener los datos de NPS  */
 var information = function(sede, generation) {
-
   var otherName = data[sede][generation]["ratings"];
-  for (var i =0; i<otherName.length; i=+1){
+  for (var i =0; i<otherName.length; i++){
       var promoter = otherName[i]["nps"]["promoters"];
       var passive =otherName[i]["nps"]["passive"];
       var detractors =otherName[i]["nps"]["detractors"];
       console.log(promoter);
       console.log(passive);
       console.log(detractors);
+      }
   }
-}
 
 filters.addEventListener("change", selectSede);
 
