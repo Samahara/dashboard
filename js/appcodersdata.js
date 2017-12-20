@@ -23,43 +23,45 @@ buttonCoders.addEventListener('click', selectOption);
 buttonOverview.addEventListener('click', selectOption);
 buttonTeachers.addEventListener('click', selectOption);
 
-//Variables y funciones para pintar coders
-var seleccionarOpcion = function(event){
-    var indiceOpcion = (event.target.selectedIndex);
+var boton = document.getElementById('filter');
+
+// Variables y funciones para pintar coders
+var seleccionarOpcion = function(event){//Esta funcion indica que elemento detona el evento
+    var indiceOpcion = event.target.selectedIndex;
     var sede = event.target[indiceOpcion].dataset.sede;
     var generacion = event.target[indiceOpcion].dataset.generacion;
     obtenerDatos(sede,generacion)
 }
-var obtenerDatos = function(sede,generacion){
-    var estudiantes = data[sede]["generaciones_estudiantes"][generacion]["estudiantes"];
-    document.getElementById("contenedor-coders").innerHTML= "";
-    for(var i = 0; i < 3; i += 1){
-        var nombre = estudiantes[i].nombre;
-        var turno =  estudiantes[i].turno;
-        var mail = estudiantes[i].mail;
-        pintarCoders(nombre,turno, mail);
+var obtenerDatos = function(sede,generacion){//esta función recorre la data para obtener la informacion
+    var estudiantes = data[sede][generacion]["students"];
+    document.getElementById("contenedor").innerHTML= "";
+    for(var i = 0; i < estudiantes.length; i++){
+        var nombre = estudiantes[i].name;
+        var photo = estudiantes[i].photo;
+        var sprint = estudiantes[i].sprints;
+
+        generarCoders(nombre, photo, sprint)
     }
 }
-var pintarCoders = function(nombre,turno,mail){
-    //contenedor padre de las tarjetas de coders.
-    var contenedorCoders = document.getElementById("contenedor-coders");
-    var parrafoNombre = document.createElement("p");
-    var parrafoTurno = document.createElement("span");
-    var parrafoCorreo = document.createElement("p");
+var generarCoders = function(nombre, photo, sprint){//Esta funcion crea elementos en el contenedor de coders. Es padre de estos elementos.
+    var contenedorCoders = document.getElementById("contenedor");
     var imagen = document.createElement("img");
+    var parrafoNombre = document.createElement("p");
+    var parrafoSprint = document.createElement("p");
     var divCoder = document.createElement("div");
+    var divInfo = document.createElement("div");
 
-    imagen.src = "http://lorempixel.com/200/200/people/";
-    imagen.classList.add("foto-coder");
-    divCoder.classList.add("coder");
+    imagen.src = photo;
     parrafoNombre.innerText = nombre;
-    parrafoTurno.innerText = turno;
-    parrafoCorreo.innerText = mail;
+    parrafoSprint.innerText = sprint; //se agrega texto con innerText
 
-    divCoder.appendChild(imagen);
-    divCoder.appendChild(parrafoNombre);
-    divCoder.appendChild(parrafoTurno);
-    divCoder.appendChild(parrafoCorreo);
+    divCoder.appendChild(imagen);//Se agregan los hijos al div
+    divInfo.appendChild(parrafoNombre);
+    divInfo.appendChild(parrafoSprint);
+    divCoder.appendChild(divInfo);
 
     contenedorCoders.appendChild(divCoder);
+
 }
+
+boton.addEventListener('change', seleccionarOpcion);
