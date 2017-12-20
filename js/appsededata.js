@@ -17,20 +17,12 @@ var information = function(sede, generation) {
       var promoter = otherName[i]["nps"]["promoters"];
       var passive =otherName[i]["nps"]["passive"];
       var detractors =otherName[i]["nps"]["detractors"];
+      console.log(promoter);
+      console.log(passive);
+      console.log(detractors);
       }
   }
 
-  var addPromoters =function(promoter) {
-    var promoters = [];
-    for (var i=0; i>promoter.length; i++) {
-      
-    }
-  }
- /* Creando funcion que pinte elementos*/
- var paintElements  = function (AddPromoter) {
-   var numberPromoter = document.createElement(span);
-
-
- }
+ 
 
 filters.addEventListener("change", selectSede);
