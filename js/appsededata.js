@@ -1,11 +1,34 @@
 //Hacer uso de los datos de la variable desatar
 /*console.log(data); */
 /*Función para visualizar y ocultar los contenedores de cada generación*/
+
+var filters = document.getElementById("button_select");
+
 var selectSede = function(event) {
-  var selectedIndex = event.target.selectedIndex;
-  var filter =event.target[selectedIndex].dataset.filter;
-  var aqp20162 = document.getElementById("AQP 2017-1");
-  var aqp20171 = document.getElementById("AQP 2016-2");
+  var selectedIndex = (event.target.selectedIndex);
+  var sede =event.target[selectedIndex].dataset.sede;
+  var generation = event.target[selectedIndex].dataset.generation;
+  information(sede, generation);
+}
+
+var information = function(sede, generation) {
+
+  var otherName = data[sede][generation]["ratings"];
+  for (var i =0; i<otherName.length; i=+1){
+      var promoter = otherName[i]["nps"]["promoters"];
+      var passive =otherName[i]["nps"]["passive"];
+      var detractors =otherName[i]["nps"]["detractors"];
+      console.log(promoter);
+      console.log(passive);
+      console.log(detractors);
+  }
+}
+
+filters.addEventListener("change", selectSede);
+
+
+
+/*  var aqp20171 = document.getElementById("AQP 2016-2");
   var cdm20172= document.getElementById("CDMX 2017-2");
   var cdm20171= document.getElementById("CDMX 2017-1");
   var lim20172 = document.getElementById("LIM 2017-2");
@@ -15,7 +38,7 @@ var selectSede = function(event) {
   var scl20171 = document.getElementById("SCL 2017-1");
   var scl20162= document.getElementById("SCL 2016-2");
 
-  if (filter === "AQP 2017-1"){
+  if (sede=== "AQP 2017-1"){
     console.log("AQP 2017-1");
     //ocultar otras geraciones
     aqp20162.stye.display="none";
@@ -29,7 +52,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //mostrar sede AQP 2017-1
     aqp20171.style.display="block";
-  } else if (filter === "AQP 2016-2") {
+  } else if (sede === "AQP 2016-2") {
     console.log("AQP 2016-2");
     //ocultar otras sedes
     aqp20171.stye.display="none";
@@ -43,7 +66,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //mostrar AQP 2016-2
     .style.display="block";
-  } else if (filter === "CDMX 2017-2") {
+  } else if (sede === "CDMX 2017-2") {
     console.log("CDMX");
     //Ocultar otras generaciones
     aqp20171.stye.display="none";
@@ -57,7 +80,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //Mostrar generación CDMX 2017-2
     cdm20172.style.display="block";
-  }else if (filter === "CDMX 2017-1") {
+  }else if (sede === "CDMX 2017-1") {
     console.log("CDMX 2017-1");
     //Ocultar otras generaciónes
     aqp20171.stye.display="none";
@@ -71,7 +94,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //Mostrar generación CDM 2017-1
     cdm20171.style.display="block";
-  }else if (filter === "LIM 2017-2") {
+  }else if (sede === "LIM 2017-2") {
     console.log("LIM 2017-2");
     //Ocultar otras generaciónes
     aqp20171.stye.display="none";
@@ -85,7 +108,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //Mostrar generación LIM 2017-2
     lim20172.style.display="block";
-  }else if (filter === "LIM 2017-1") {
+  }else if (sede === "LIM 2017-1") {
     console.log("2017-1");
     //Ocultar otras generaciónes
     aqp20171.stye.display="none";
@@ -99,7 +122,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //Mostrar generación LIM 2017-1
     lim20171.style.display="block";
-  }else if (filter === "LIM 2016-2") {
+  }else if (sede === "LIM 2016-2") {
     console.log("LIM 2016-2");
     //Ocultar otras generaciónes
     aqp20171.stye.display="none";
@@ -113,7 +136,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //Mostrar generación LIM 2016-2
     lim20162.style.display="block";
-  }else if (filter === "SCL 2017-2") {
+  }else if (sede === "SCL 2017-2") {
     console.log("SCL 2017-2");
     //Ocultar otras generaciónes
     aqp20171.stye.display="none";
@@ -127,7 +150,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //Mostrar generación SCL 2017-2
     scl20172.style.display="block";
-  }else if (filter === "SCL 2017-1") {
+  }else if (sede === "SCL 2017-1") {
     console.log("SCL 2017-1");
     //Ocultar otras generaciónes
     aqp20171.stye.display="none";
@@ -141,7 +164,7 @@ var selectSede = function(event) {
     scl20162.style.display="none";
     //Mostrar generación SCL 2017-1
     scl20171.style.display="block";
-  }else if (filter === "SCL 2016-2") {
+  }else if (sede === "SCL 2016-2") {
     console.log("SCL 2016-2");
     //Ocultar otras generaciónes
     aqp20171.stye.display="none";
@@ -158,7 +181,7 @@ var selectSede = function(event) {
   }
 
 } /*Cierre de la función*/
-
+/*
 var cargarPagina = function () {
 
   var filter =event.target[selectedIndex].dataset.filter;
@@ -189,3 +212,4 @@ filters.addEventListener("change", selectOption2);
 }
 
 cargarPagina ();
+*/

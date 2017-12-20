@@ -35,18 +35,18 @@
     <!-- Un section que contenga toda la información relevante-->
     <section id="main_container" class="container" >
       <!-- Filtro para desatar evento que mostrara la información por sedes-->
-        <select class="filtro" id="button_select"  >
-          <option >Selecciona una sede </option>
-          <option value = "SEDE" data-filter="AQP 2017-1" class="option"> Aqueripa, generación 2017-1</option>
-          <option value = "SEDE" data-filter="AQP 2016-2"class="option">Aqueripa, generación 2016-2</option>
-          <option value = "SEDE" data-filter="CDMX 2017-2" class="option">Ciudad de México, generación 2017-2</option>
-          <option value = "SEDE" data-filter="CDMX 2017-1" class="option">Ciudad de México, generación 2017-1</option>
-          <option value = "SEDE" data-filter="LIM 2017-2" class="option">Lima, generación 2017-2</option>
-          <option value = "SEDE" data-filter="LIM 2017-1" class="option">Lima, generación 2017-1</option>
-          <option value = "SEDE" data-filter="LIM 2016-2" class="option">Lima, generación 2016-2</option>
-          <option value = "SCL" data-filter="SCL 2017-2" class="option">Santiago de Chile, generación 2017-2</option>
-          <option value = "SCL" data-filter="SCL 2017-1" class="option">Santiago de Chile, generación 2017-1</option>
-          <option value = "SCL" data-filter="SCL 2016-2"class="option">Santiago de Chile, generación 2016-2</option>
+        <select class="filer" id="button_select">
+          <option data-sede="nothing" >Selecciona una sede </option>
+          <option data-generation="2017-1" data-sede="AQP" > Aqueripa, generación 2017-1</option>
+          <option data-generation="2016-2"  data-sede="AQP" >Aqueripa, generación 2016-2</option>
+          <option data-generation="2017-2" data-sede="CDMX" >Ciudad de México, generación 2017-2</option>
+          <option data-generation="2017-1" data-sede="CDMX" >Ciudad de México, generación 2017-1</option>
+          <option data-generation="2017-2" data-sede="LIM" >Lima, generación 2017-2</option>
+          <option data-generation="2017-1" data-sede="LIM" >Lima, generación 2017-1</option>
+          <option data-generation="2016-2" data-sede="LIM" >Lima, generación 2016-2</option>
+          <option data-generation="2017-2" data-sede="SCL" >Santiago de Chile, generación 2017-2</option>
+          <option data-generation="2017-1" data-sede="SCL" >Santiago de Chile, generación 2017-1</option>
+          <option data-generation="2016-2" data-sede="SCL" >Santiago de Chile, generación 2016-2</option>
         </select>
         <!--Agrego un section con id AQP 2017-1 que es mi contenedor de información de esa sede y generación-->
         <section  id="AQP 2017-1" >
@@ -126,6 +126,7 @@
               <span>PORCENT</span>
             </section>
           </section> <!--Cierre de Aqueripa generacion 2016-2-->
+
           <!--Agrego un section con id CDMX 2017-2  que es mi contenedor de información de esa sede y generación-->
           <section  id="CDMX 2017-2" >
           <!--Agregando el div que creo tendra la gráfica enrollment -->
@@ -268,6 +269,7 @@
           <span>number</span>
           <span>PORCENT</span>
         </section>
+
         <!--Agregando el div que creo tendra la gráfica tech skills  -->
         <section class="graphics2 tech-skills" >
           <h3>TECH SKillS</h3>
@@ -437,6 +439,7 @@
     <!-- Base de datos -->
     <script src="../js/data.js"></script>
     <script src="../js/appsededata.js"></script>
+    <script src="../js/appsede-data.js"></script>
     <!-- Aquí va tus archivos JS -->
     <script src="../js/app.js"></script>
     <script src="../js/app-sede.js"></script>
