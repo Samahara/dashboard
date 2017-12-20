@@ -29,12 +29,12 @@
   }
 
 .graphics {
-  width:39.5%;
   background-color: #EFEFEF;
   border-radius: 15px;
   display: inline-block;
   margin: 30px 20px;
   outline: 1px solid blue;
+  width:39.5%;
 }
 
 .graphics > h3 {
