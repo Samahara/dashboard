@@ -124,3 +124,7 @@ header > div.user > p {
 .float-right {
   float: right;
 }
+
+.visibility {
+  visibility: hidden;
+}
