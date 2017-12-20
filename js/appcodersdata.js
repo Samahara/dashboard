@@ -51,7 +51,7 @@ var generarCoders = function(nombre, photo, sprint){//Esta funcion crea elemento
     var divCoder = document.createElement("div");
     var divInfo = document.createElement("div");
 
-    imagen.src = photo;
+    imagen.src = photo; //agrega los atributos a los contenedores
     parrafoNombre.innerText = nombre;
     parrafoSprint.innerText = sprint; //se agrega texto con innerText
 
