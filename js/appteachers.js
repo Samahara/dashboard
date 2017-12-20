@@ -7,21 +7,44 @@ var select = function() {
   var eventSelection = event.target.selectedIndex;
   var sede = event.target.value;
   var year = event.target[eventSelection].dataset.generation;
-  datInfo(sede,year)
+  datInfo(sede, year)
 }
 
-var datInfo = function(sede,year) {
+var datInfo = function(sede, year) {
   var main = data[sede][year]['ratings'];
+  containerTeachers.innerHTML = "";
   for (var i = 0; i < main.length; i++) {
     var teachers = main[i]['teacher'];
     var jedi = main[i]['jedi'];
+    var sprint = main[i]['sprint'];
 
-    var objTeachers = {};
-    objTeachers = teachers;
-
-    console.log(objTeachers);
-
+    paintElements(sprint, teachers, jedi)
   }
+}
+
+var paintElements = function(sprint, teachers, jedi) {
+  // Crear elementos
+  var divContainer = document.createElement('div');
+  var paragraphTeachers = document.createElement('p');
+  var paragraphJedi = document.createElement('p');
+  var paragraphSprint = document.createElement('p');
+  var imageGraph = document.createElement('img');
+
+  // Agregando atributos a los elementos creados
+  imageGraph.src = "../assets/images/bar-graph.png";
+  paragraphTeachers.innerText = "El promedio de los teachers es " + teachers;
+  paragraphJedi.innerHTML = "El promedio de los jedi es " + jedi;
+  paragraphSprint.innerHTML = sprint;
+
+  // Agregando elementos al div
+  divContainer.appendChild(imageGraph);
+  divContainer.appendChild(paragraphSprint);
+  divContainer.appendChild(paragraphTeachers);
+  divContainer.appendChild(paragraphJedi);
+
+  // Agregando el div al HTML
+  containerTeachers.appendChild(divContainer);
+
 }
 
 
