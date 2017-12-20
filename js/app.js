@@ -2,30 +2,33 @@
 console.log(data);
 
 // Variables reutilizables
-var maincontainer = document.getElementById('main_container');
 var buttonCoders = document.getElementById('coders');
 var buttonOverview = document.getElementById('overview');
 var buttonTeachers = document.getElementById('teachers');
 var homeButton = document.getElementById('home');
+var maincontainer = document.getElementById('main_container');
 
 // Funciones para los botones del menú
 var selectOption = function() {
   var option = event.target;
   console.log(option);
   if (option === buttonCoders) {
-    window.location="views/coders.html";
+    window.location = "views/coders.html";
   } else if (option === buttonOverview) {
-    window.location="views/sede.html";
+    window.location = "views/sede.html";
   } else if (option === buttonTeachers) {
-    window.location="views/teachers.html";
+    window.location = "views/teachers.html";
   }
-}
-
-var selectHome = function() {
-  window.location="../index.html"
 }
 
 buttonCoders.addEventListener('click', selectOption);
 buttonOverview.addEventListener('click', selectOption);
 buttonTeachers.addEventListener('click', selectOption);
+
+
+// Funcion para el boton de Home
+var selectHome = function() {
+  window.location = "../index.html";
+}
+
 homeButton.addEventListener('click', selectHome);
