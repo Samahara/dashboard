@@ -17,15 +17,10 @@ var information = function(sede, generation) {
       var promoter = otherName[i]["nps"]["promoters"];
       var passive =otherName[i]["nps"]["passive"];
       var detractors =otherName[i]["nps"]["detractors"];
-
       }
+    return (promoter, passive, detractors)
   }
 
- function sumaPromoters (promoter) {
-   var totalPromoters = [];
-   for(var i=0; i<promoter.length; i++) {
-     
-   }
- }
+
 
 filters.addEventListener("change", selectSede);
