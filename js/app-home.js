@@ -1,3 +1,4 @@
+var banner = document.getElementById('banner');
 var button1 = document.getElementById('button1');
 var button2 = document.getElementById('button2');
 var button3 = document.getElementById('button3');

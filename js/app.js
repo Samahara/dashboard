@@ -5,7 +5,6 @@ console.log(data);
 var buttonCoders = document.getElementById('coders');
 var buttonOverview = document.getElementById('overview');
 var buttonTeachers = document.getElementById('teachers');
-var banner = document.getElementById('banner');
 var homeButton = document.getElementById('home');
 var maincontainer = document.getElementById('main_container');
 
